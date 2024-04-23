@@ -1,0 +1,219 @@
+body,html {
+  height: 100%;
+}
+
+#hlavniCast {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(img/uvod.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  padding-top: 60px;
+  padding-left: 15%;
+  padding-right: 15%;
+  max-height: 400px;
+}
+
+#stredniCast {
+  background-color: rgb(245, 233, 195);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100%;
+  background-repeat: no-repeat;
+  padding-left: 10%;
+  padding-right: 10%;
+  max-height: 400px;
+}
+
+.obrazky {
+  display: flex;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu button {
+    border-radius: 0;
+    border-collapse: collapse;
+}
+
+.menu a:first-child button {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.menu a:last-child button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#kontaktCast {
+  background-color: rgb(245, 233, 195);
+  text-align: center;
+}
+
+.obrazek {
+  position: relative;
+}
+
+.popisek {
+  position: relative;
+  background-color: black;
+  color: white;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+  font-size: 30px;
+}
+
+.obrazek:hover .popisek {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 60px;
+  position: relative;
+  animation: animace1 9s;
+}
+
+.animace1 {
+  position: relative;
+  animation-name: animace1;
+}
+
+@keyframes animace1 {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 500px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.nadpisy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nadpis {
+  color: rgb(245, 233, 195);
+  font-size: 50px;
+  text-decoration: overline;
+  text-align: center;
+}
+
+.podnadpis {
+  color: white;
+  font-size: 25px;
+  text-decoration: dashed;
+  text-align: center;
+}
+
+.sloupec {
+  float: left;
+  text-align: justify;
+  padding: 10px;
+}
+
+.s30 {
+  width: 30%;
+}
+
+.s40 {
+  width: 40%;
+}
+
+.s70 {
+  width: 70%;
+}
+
+p:nth-child(3n + 1)::before {
+  content: "🥖 ";
+}
+
+p:nth-child(3n + 2)::before {
+  content: "🥨 ";
+}
+
+p:nth-child(3n)::before {
+  content: "🥐 ";
+}
+
+p {
+  margin: auto;
+}
+
+.popisek {
+  position: absolute;
+  bottom: 5px;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  opacity: 0.3;
+  transition: opacity 0.5s;
+}
+
+.obrazek:hover .popisek {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.btn-group-vertical {
+  margin: auto;
+}
+
+.formular {
+    background-color: rgb(245, 233, 195);
+}
+
+@media screen and (max-width: 800px) {
+  img {
+    max-width: 120px;
+  }
+  .hlavniCast {
+    padding: 0 !important;
+    }
+
+    .menu {
+        width: 100%;
+    }
+    .nadpis {
+        font-size: 15px;
+        margin: 0;
+    }
+
+    button {
+        font-size: 11px !important;
+    }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    img {
+        max-width: 220px;
+      }
+
+      .nadpis {
+        font-size: 30px;
+        margin-top: 80px;
+    }  
+    .podnadpis {
+        font-size: 20px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    img {
+        max-width: 420px;
+      }
+      
+      .nadpis {
+        margin-top: 80px;
+      }
+}
