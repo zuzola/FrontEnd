@@ -1,0 +1,25 @@
+.galerie {
+    display: flex;
+    margin: 50px;
+}
+.obrazek {
+    position: relative;
+    padding-left: 40px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.popisek {
+    position: absolute;
+    bottom: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+}
+.obrazek:hover .popisek {
+    opacity: 1;
+    transition: opacity 0.5s;
+}

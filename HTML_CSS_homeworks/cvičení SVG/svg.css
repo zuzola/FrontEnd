@@ -1,0 +1,11 @@
+.white {
+    fill: white;
+}
+.blue {
+    fill: aqua;
+}
+.elipsa {
+    fill: none;
+    stroke: blue;
+    stroke-width: 10;
+}

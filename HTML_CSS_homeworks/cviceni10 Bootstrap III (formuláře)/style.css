@@ -1,0 +1,71 @@
+.blue {
+    background-color: #1b5891;
+}
+.green {
+    background-color: #86af33;
+}
+.text-form {
+    color: white;
+    text-shadow: 2px 2px 7px black;
+}
+.btn-primary {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    text-shadow: 1px 1px 3px black;
+    margin-right: 850px;
+}
+.btn-primary:hover {
+    background-color: white;
+    color: #1b5891;
+    cursor: pointer;
+    text-shadow: none;
+}
+.btn-green {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    text-shadow: 1px 1px 3px black;
+}
+.btn-green:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    text-shadow: none;
+}
+.zprava {
+    height: 75%;
+    background-image: url(img/zprava.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 8px;
+    padding-left: 40px;
+}
+.email {
+    background-image: url(img/email.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 8px;
+    padding-left: 40px;
+}
+.tel {
+    background-image: url(img/telefon.png);
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: 8px;
+    padding-left: 40px;
+}
+.zprava:focus,
+.email:focus,
+.tel:focus {
+    background-color: none;
+}
+
+textarea {
+    /*resize: none;*/
+    height: 90px;
+ }
+
+.odeslat {
+    width: 165px;
+}

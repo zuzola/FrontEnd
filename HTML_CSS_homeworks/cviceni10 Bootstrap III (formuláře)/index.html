@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cvičení 10: Bootstrap III (formuláře)</title>
+</head>
+<body>
+    <div class="blue my-5">
+        <div class="container">
+            <div class="row px-5">
+                <div class="col text-form py-2 px-5">
+                    <label class="col py-2">Zpráva</label>
+                    <textarea name="Zpráva" id="Vase zprava" class="form-control rounded-0" placeholder="Začátek zprávy..."></textarea>
+                </div>
+            </div>
+            <div class="row px-5">
+                <div class="col text-form px-5">
+                    <label class="col py-2">Email</label>
+                    <input name="Email" id="email" class="form-control rounded-0" placeholder="Zadejte Váš e-mail..."></input>
+                </div>
+            </div>
+            <div class="row px-5">
+                <div class="col text-form px-5 py-3">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">
+                    Souhlasím s podmínkami GDPR
+                    </label>
+                </div>
+            </div>
+            <div class="row px-5 pb-4">
+                <div class="col px-5 text-center">
+                    <button type="button" class="btn btn-primary rounded-0 fw-bold odeslat">ODESLAT</button>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <div class="container py-5">
+        <div class="row form-group py-2">
+            <div class="col-2">
+                Jméno
+            </div>
+            <div class="col-10">
+                <input type="text" class="form-control" id="jmeno" placeholder="Jan">
+            </div>
+        </div>
+        <div class="row form-group py-2">
+            <div class="col-2">
+                Příjmeni
+            </div>
+                <div class="col-10">
+                    <input type="text" class="form-control" id="prijmeni" placeholder="Novak">
+                </div>
+            </div>
+            <div class="row form-group py-2">
+                 <div class="col-2">
+                    Email
+                </div>
+            <div class="col-10">
+                    <input type="email" class="form-control" id="email" placeholder="jan.novak@seznam.cz">
+                </div>
+            </div>
+            <div class="row form-group py-2">
+                 <div class="col-2">
+                    Heslo
+                </div>
+                <div class="col-10">
+                    <input type="heslo" class="form-control" id="heslo" placeholder="8-20 znaku">
+                </div>
+            </div>
+        <div class="row form-group py-2">
+            <div class="col-2">
+                Heslo znovu
+                </div>
+            <div class="col-10">
+                <input type="hesloznovu" class="form-control" id="hesloznovu" placeholder="8-20 znaku">
+            </div>
+        </div>
+        <div class="row form-group py-2">
+            <div class="col -2">
+                Pohlaví
+            </div>
+            <div class="col-10">
+                <select class="form-select"  name="pohlavi" id="pohlavi">
+                    <option value="F">Muž</option>
+                    <option value="M">Žena</option>
+                    <option value="O">Iné</option>
+                </select>
+            </div>
+        </div>
+        <div class="row form-group py-5">
+            <div class="col text-center">
+                <input type="submit" class="btn btn-success" value="Založit účet">
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div class="green my-5">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col text-center text-form">
+                    <p class="h2">REKLAMACE</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-form">
+                    <label class="col-form-label" for="zprava">Vaše zpráva</label>
+                    <textarea name="zprava" id="zprava" class="form-control border-0 rounded-0 zprava"></textarea>
+                </div>
+                <div class="col text-form">
+                    <div class="mail">
+                    <label class="col-form-label" for="email">E-mail</label>
+                    <input name="email" id="email" class="form-control border-0 rounded-0 email"></textarea>
+                    </div>
+                    <div class="phone">
+                    <label class="col-form-label" for="telefon">Telefon</label>
+                    <input name="telefon" id="telefon" class="form-control border-0 rounded-0 tel"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col text-center">
+                    <button type="button" class="btn btn-green rounded-0 fw-bold">ODESLAT</button>
+                </div>
+            </div>
+        </div> 
+    </div> 
+ 
+</body>
+</html>

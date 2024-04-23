@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cvičení 5: Domek, vlajky, šipka v SVG</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <p class="text">Domek jednim tahem</p>
+        <svg width="300" height="300 ">
+          <polyline points="30,250 30,150 270,250 270,150 30,150 150,50 270,150 30,250 270,250" class="domek"/>
+        </svg>
+      </div>
+      <div class="item">
+        <p class="text">Ceska vlajka</p>
+        <svg width="300" height="300">
+          <polygon points="30,50 30,200 150,125" class="modra" />
+          <polygon points="30,50 255,50 255,125 150,125" class="white" />
+          <polygon points="30,200 255,200 255,125 150,125" class="red" />
+          <polyline points="30,50 30,200 255,200 255,50 30,50" class="ram" />
+        </svg>
+      </div>
+      <div class="item">
+        <p class="text">Svedska vlajka</p>
+        <svg width="300" height="300">
+          <polyline points="30,50 30,200 255,200 255,50 30,50" class="modra" />
+          <polyline points="100,50 128,50 128,200 100,200" class="zlta" />
+          <polyline points="30,110 30,140 255,140 255,110" class="zlta" />
+          <polyline points="30,50 30,200 255,200 255,50 30,50" class="ram" />
+        </svg>
+      </div>
+      <div class="item">
+        <p class="text">Sipka</p>
+        <svg width="300" height="300" class="sipka">
+          <polygon
+            points="150,50 150,110 30,110 30,190 150,190 150,250 270,150 150,50"
+            class="green"
+          />
+          <polyline
+            points="150,50 150,110 30,110 30,190 150,190 150,250 270,150 150,50"
+            class="ramcek"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>

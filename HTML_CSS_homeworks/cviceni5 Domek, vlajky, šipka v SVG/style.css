@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgb(220, 220, 220);
+}
+.item {
+  flex: auto;
+  border: 1px solid black;
+  text-align: center;
+  padding: 2%;
+}
+.domek {
+  fill: none;
+  stroke: black;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+.white {
+  fill: white;
+}
+.red {
+  fill: red;
+}
+.ram {
+  fill: none;
+  stroke: black;
+  stroke-width: 1;
+}
+.modra {
+  fill: rgb(59, 59, 211);
+}
+.zlta {
+  fill: rgb(225, 218, 22);
+}
+.sipka {
+  fill: rgb(133, 185, 55);
+  stroke: green;
+  stroke-width: 2;
+}
+.sipka:hover {
+  fill: rgb(37, 181, 220);
+  stroke: rgb(26, 11, 120);
+  stroke-width: 2;
+  cursor: pointer;
+}
+.text {
+    font-size: 30px;
+    font-weight: 900;
+}
+@media only screen and (max-width: 799px) {
+    .item {
+        flex-basis: calc(100% - 20px);
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1399px) {
+    .item {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .item {
+        flex-basis: calc(25% - 20px);
+    }
+}
+    

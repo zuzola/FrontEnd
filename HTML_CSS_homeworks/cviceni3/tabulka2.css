@@ -1,0 +1,20 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    counter-reset: cislo;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+tr:nth-child(2n) {
+    background-color: rgb(220, 216, 216);
+}
+tr:hover:not(:first-child) {
+    background-color: gray;
+    color: white;
+}
+tr:first-child th:nth-child(n+3)::after {
+    counter-increment: cislo;
+    content: "Kolo " counter(cislo) ": ";
+}

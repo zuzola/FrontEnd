@@ -1,0 +1,34 @@
+table {
+  width: 800px;
+  border-collapse: collapse;
+  margin: 0 auto;
+  counter-reset: cisla;
+}
+td {
+  border: 1px solid black;
+  height: 80px;
+  color: transparent;
+  text-align: center;
+}
+.abc {
+  counter-reset: abc;
+}
+th:nth-child(n + 2)::after {
+  counter-increment: abc;
+  content: counter(abc, lower-alpha);
+  font-weight: bold;
+}
+.row::before {
+  counter-increment: cisla;
+  content: counter (cisla);
+  font-weight: bold;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.svetla {
+  background-color: beige;
+}
+.tmava {
+  background-color: rgba(139, 31, 31, 0.735);
+}

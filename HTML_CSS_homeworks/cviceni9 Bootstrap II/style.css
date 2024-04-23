@@ -1,0 +1,14 @@
+.tlacitko {
+    background-color: white;
+    color:aqua;
+    border-color: aqua;
+    width: 200px;
+}
+.tlacitko:hover{
+    background-color: aqua;
+    color: white;
+}
+td:hover{
+    background-color: rgb(226, 226, 226);
+    cursor: pointer;
+}
