@@ -1,0 +1,7 @@
+.container {
+    counter-reset: cislo;
+}
+.item::before {
+    counter-increment: cislo 5;
+    content: counter(cislo);
+}

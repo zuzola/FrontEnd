@@ -1,0 +1,27 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin-bottom: 5px; 
+ }
+ div:hover {
+     background-color: yellow;
+     width: 300px;
+ }
+ .linearni {
+     transition: width 3s, background-color 3s;
+     transition-timing-function: linear;
+ }
+ .easy-in {
+     transition: width 3s, background-color 3s;
+     transition-timing-function: ease-in;
+ }
+ .easy-out {
+     transition: width 1.5s, background-color 1.5s;
+     transition-timing-function: ease-out;
+     transition-delay: 1.5s;
+ }
+ .vlastni {
+     transition: width 3s;
+     transition-timing-function: cubic-bezier(0,2.11,1,-0.87);
+ }

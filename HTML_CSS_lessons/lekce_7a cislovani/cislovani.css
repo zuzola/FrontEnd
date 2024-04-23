@@ -1,0 +1,23 @@
+body {
+    counter-reset: first;
+}
+h1 {
+    counter-increment: first;
+    counter-reset: druhy;
+}
+h1::before {
+    content: counter(first) ". ";
+}
+h2 {
+    counter-increment: druhy;
+    counter-reset: treti;
+}
+h2::before {
+    content: counter(first) "." counter(druhy) ". ";
+}
+h3 {
+    counter-increment: treti;
+}
+h3::before {
+    content: counter(first) "." counter(druhy) "." counter(treti) ". ";
+}

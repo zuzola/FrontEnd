@@ -1,0 +1,28 @@
+.oznacenyText {
+    border-bottom: 1px dotted gray;
+    position: relative;
+}
+.oznacenyText:hover {
+    background-color: rgb(206, 206, 206);
+}
+.oznacenyText .vysvetlivkaText {
+    position: absolute;
+    width: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    top: 100%;
+    left: 0%;
+    visibility: hidden;
+}
+.oznacenyText .vysvetlivkaText > a {
+    color: rgb(198, 198, 250);
+}
+.oznacenyText .vysvetlivkaText img {
+    width: 190px;
+}
+.oznacenyText:hover .vysvetlivkaText {
+    visibility: visible;
+}

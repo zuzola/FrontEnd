@@ -1,0 +1,141 @@
+/* První animace - čtverec pohobující se horizontálně a změna barev */
+.animace1 {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: relative;
+    /*animace*/
+    animation-name: animace1;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animace1 {
+    0% {
+        left: 0px;
+        background-color: yellow;
+    }
+
+    50% {
+        left: 800px;
+        background-color: green;
+    }
+
+    100% {
+        left: 0px;
+        background-color: yellow;
+    }
+}
+
+/* Druhá část - obdélníky ala "sloupcové grafy" */
+.obdelnik {
+    height: 30px;
+    width: 0px;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+.animace2 {
+    background-color: red;
+    animation-name: animace2;
+}
+
+@keyframes animace2 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 650px;
+    }
+}
+
+.animace3 {
+    background-color: green;
+    animation-name: animace3;
+}
+
+@keyframes animace3 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 240px;
+    }
+}
+
+.animace4 {
+    background-color: blue;
+    animation-name: animace4;
+}
+
+@keyframes animace4 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 800px;
+    }
+}
+
+.animace5 {
+    background-color: violet;
+    animation-name: animace5;
+}
+
+@keyframes animace5 {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 550px;
+    }
+}
+
+/* Druhý čtverec - animace ala hodinove rucicky a zpet */
+.druhyObdelnik {
+    width: 200px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    /* aniamce */
+    animation-name: druhyObdelnik;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes druhyObdelnik {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}

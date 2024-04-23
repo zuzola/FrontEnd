@@ -1,0 +1,6 @@
+.item:nth-child(2n) {
+    background-color: brown;
+}
+.item:nth-child(2n+1) {
+    background-color: rgb(248, 162, 162);
+}

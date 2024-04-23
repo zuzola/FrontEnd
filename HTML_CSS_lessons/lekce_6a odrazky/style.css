@@ -1,0 +1,22 @@
+p::first-letter {
+    font-size: xx-large;
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+}
+p:nth-child(2n) {
+    background-color: rgb(221, 221, 221);
+}
+p:nth-child(3n+1)::after {
+    content: " - 🔴";
+}
+p:nth-child(3n+2)::after {
+    content: " - 🟡";
+}
+p:nth-child(3n)::after {
+    content: " - 🟢";
+}
+p {
+    height: 50px;
+    margin: 0 auto;
+}

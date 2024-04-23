@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.item {
+    flex: 25%;
+    border: 1px solid black;
+    text-align: center;
+    padding: 2%;
+}

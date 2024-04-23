@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../css prechody"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "animace"
+	}
+}

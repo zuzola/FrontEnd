@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>SVG</h1>
+    <ul>
+        <li>Obdélník (<code>rect</code>)</li>
+        <li>Kruh (<code>circle</code>)</li>
+        <li>Elipsa (<code>ellipse</code>)</li>
+        <li>Úsečka (<code>line</code>)</li>
+        <li>Mnohoúhleník (<code>polygon</code>)</li>
+    </ul>
+    <svg width="400" height="400" style="border: 1px solid black;">        
+        <rect width="300" height="300" x="50" y="50" style="fill: green; stroke: blue; stroke-width: 5px;" />
+        <circle cx="200" cy="200" r="150" style="fill: red; opacity: 0.8; stroke: black;" />
+        <ellipse cx="200" cy="200" rx="150" ry="60" style="fill:white;" transform="rotate(45,200,200)" />
+        <ellipse cx="200" cy="200" rx="60" ry="150" style="fill:white;" transform="rotate(45,200,200)" />
+        <line x1="200" y1="50" x2="200" y2="350" style="stroke:rgb(216, 216, 216); stroke-width:10px" />
+    </svg>
+    <p>Polygon</p>
+    <svg width="400" height="400" style="border: 1px solid black;">
+        <polygon points="380,380 380,200 350,200 300,10 50,200 150,180 40,380" 
+                style="fill:none; stroke: orangered; stroke-width: 6px;"
+                transform="rotate(45,200,200)"
+                />
+    </svg>
+</body>
+</html>

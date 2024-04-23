@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+.sloupec {
+    float: left;
+    text-align: justify;
+    padding: 20px;
+    border: 1px solid black;
+}
+.s20 {
+    width: 20%;
+}
+.s40 {
+    width: 40%;
+}
+.zluta {
+    background-color: rgb(255, 255, 167);
+}
+.zelena {
+    background-color: rgb(96, 156, 96);
+}
+.cervena {
+    background-color: rgb(255, 140, 140);
+}
+.zelena:hover, .zluta:hover, .cervena:hover {
+    background-color: brown;
+    color:  white;
+}
+
+@media screen and (max-width: 800px) {
+    .s20, .s40 {
+        width: 100%;
+    }    
+}

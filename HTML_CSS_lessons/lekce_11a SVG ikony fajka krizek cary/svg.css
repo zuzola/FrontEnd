@@ -1,0 +1,62 @@
+svg {
+    cursor: zoom-out;
+}
+/*Fajfka*/
+.fajfkaPozadi {
+    fill: rgb(177, 227, 177);
+    stroke: green;
+    stroke-width: 2;
+}
+.fajfkaIkona {
+    fill: none;
+    stroke: green;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+.fajfka:hover .fajfkaPozadi {
+    fill: green;
+    stroke: rgb(177, 227, 177);
+}
+.fajfka:hover .fajfkaIkona {
+    stroke: rgb(177, 227, 177);
+}
+
+/*Krizek*/
+.krizekPozadi {
+    fill: rgb(204, 147, 172);
+    stroke: rgb(135, 38, 98);
+    stroke-width: 2;
+}
+.krizekIkona {
+    fill: none;
+    stroke: rgb(135, 38, 98);
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+.krizek:hover .krizekPozadi {
+    stroke: rgb(204, 147, 172);
+    fill: rgb(135, 38, 98);
+}
+.krizek:hover .krizekIkona {
+    stroke: rgb(204, 147, 172);
+}
+
+/*Cary*/
+.caryPozadi {
+    fill: rgb(203, 196, 200);
+    stroke: grey;
+    stroke-width: 2;
+}
+.caryIkona {
+    fill: none;
+    stroke: grey;
+    stroke-width: 10;
+    stroke-linecap: round;
+}
+.cary:hover .caryPozadi {
+    stroke: rgb(203, 196, 200;
+    fill: grey);
+}
+.cary:hover .carykIkona {
+    stroke: rgb(203, 196, 200;
+}
