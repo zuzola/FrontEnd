@@ -1,0 +1,15 @@
+HTML (Hypertext Markup Language): Standardní značkovací jazyk pro tvorbu webových stránek a aplikací.
+CSS (Cascading Style Sheets): Používá se k úpravě vzhledu prvků HTML na webové stránce.
+JavaScript: Programovací jazyk, který umožňuje dynamický obsah, interaktivitu a chování na webových stránkách.
+JSON (JavaScript Object Notation): Lehký formát pro výměnu dat, běžně používaný pro přenos dat mezi serverem a webovou aplikací.
+PNG (Portable Network Graphics): Rastrový grafický formát často používaný pro obrázky na webu díky své ztrátově komprimované kvalitě.
+JPEG (Joint Photographic Experts Group): Další běžný rastrový grafický formát pro webové obrázky, nabízející ztrátovou kompresi vhodnou pro fotografie.
+GIF (Graphics Interchange Format): Formát obrázků podporující animaci a ztrátovou kompresi, často používaný pro krátké animované klipy nebo jednoduché animace na webu.
+SVG (Scalable Vector Graphics): Vektorový grafický formát založený na XML, který umožňuje škálovatelné a nezávislé na rozlišení obrázky na webu.
+MP4 (MPEG-4 Part 14): Digitální multimediální formát kontejneru běžně používaný pro ukládání video a audio souborů na webu.
+WebM: Multimediální formát kontejneru navržený pro použití s HTML5 videem a podporovaný moderními webovými prohlížeči, často používaný pro online streaming.
+WebP: Formát obrázků vyvinutý společností Google nabízející jak ztrátovou, tak bezztrátovou kompresi, navržený pro zlepšení doby načítání webových stránek.
+WOFF (Web Open Font Format): Formát písma optimalizovaný pro použití na webu, poskytující lepší kompresi a podporu licencování písma.
+WOFF2: Aktualizovaná verze formátu Web Open Font Format s vylepšenou kompresí a dalšími vylepšeními.
+ICO (Icon): Formát souboru používaný pro ikony na webu, obvykle používaný pro favikony (malé ikony zobrazené v kartách prohlížeče).
+PDF (Portable Document Format): Formát souboru často používaný pro dokumenty, které je třeba sdílet nebo tisknout, zachovávající formátování napříč různými platformami.

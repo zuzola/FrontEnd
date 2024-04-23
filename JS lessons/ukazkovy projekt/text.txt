@@ -1,0 +1,15 @@
+Leaflet
+
+1. co to je, k čemu to je:
+Je to JS knihovna pro tvorbu interaktivních webových map.
+
+2. Vlastnosti:
+Open source
+BSD 2-Clause License
+https://github.com/Leaflet/Leaflet
+Leaflet je jedna z nejpopulárnějších (z open source) knihoven pro tvorbu webových map. Aktuálně ve verzi 1.9.4 a první verze byla vytvořena před 11. lety, knihovna je stále aktivně vyvíjena a má cca 800 účastníku. Viz GitHub.
+
+3. Základní komponenty knihovny
+Knihovna se skládá z části JS a CSS. K vykreslení potřebuje div s id, pomocí. Tento div se použije ve funkci L.map
+L.Map je základní objekt pro tvorbu mapy.
+Další objekty a funkce jsou dostupné na https://leafletjs.com/reference.html

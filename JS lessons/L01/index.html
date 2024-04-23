@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uvod</title>
+    <style>
+        h1 {
+            font-style: italic;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <h1 id="nadpis" style="color: red; background-color: blue;">Moje oblíbené jazyky</h1>
+        <button id="tlacitko">Click me!</button>
+        <li>Python</li>
+        <li>JS</li>
+        <li>Java</li>
+    </ul>
+    <img onclick="alert('hello');"
+  class="fit-picture"
+  src="https://interactive-examples.mdn.mozilla.net/media/cc0-images/grapefruit-slice-332-332.jpg"
+  alt="Grapefruit slice atop a pile of other slices" />
+    <script>
+        let jmeno = "Tonda";
+        let xyz = document.getElementById('nadpis');
+
+        xyz.onclick = function() {
+        // alert('Click H1');
+        this.textContent = jmeno;
+    };
+
+    document.getElementById('tlacitko').onclick = function() {
+        let jmeno2 = prompt('Zadej sve jmeno: ');
+        xyz.textContent = jmeno2;
+    };
+    </script>
+</body>
+</html>

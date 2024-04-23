@@ -1,0 +1,17 @@
+chcem ist do Vietnamu v zari
+
+mesiace: zari, listopad
+zeme: vietnam, dansko
+
+AND:
+zari and vietnam  = 1 true
+zari and dansko = 0 false
+listopad and vietnam = 0 false
+listopad and dansko = 0 false
+
+OR:
+zari or vietnam = 1 true
+zari or dansko = 1 true
+listopad or vietnam = 1 true
+listopad or dansko = 0 false
+

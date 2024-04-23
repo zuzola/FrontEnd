@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexeso</title>
+    <style>
+        div {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            width: 1250px;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+
+    <script>
+        let obrazky = [];
+        let main = document.getElementById('main');
+
+        // vytvořé 18 url obrázků - každý 2 přidá do pole obrazky
+        for (let index=1; index<=18; index++) {
+            let url = 'https://picsum.photos/200?' + index;
+            obrazky.push(url);
+            obrazky.push(url);
+        }
+
+        // náhodné seřazení url obrázků v poli
+        obrazky.sort(() => Math.random() - 0.5);
+
+        // pomocné proměnné pro funkčnost hry
+        let pocetKliku = 0; // počet kliků
+        let img1 = null; // první otočený obrazek
+        let img2 = null; // druhy otočený obrazek
+
+        // procházíme všech 36 url obrázků (2x18)
+        // a vytvoříme pro každé url html img element
+        for (let index=0; index<obrazky.length; index++) {
+            let img = document.createElement('img');
+            img.src = 'https://picsum.photos/200'; // každému nastavím stejné url
+            img.dataset.xyz = obrazky[index]; // do dat uložím vlastní url obrázku
+            main.appendChild(img);
+
+            img.onclick = function () {
+                img.src = img.dataset.xyz; // nastavím src obrázku na skutečnou url (otočím)
+                // kontrola, které otočení provádím
+                if (pocetKliku % 2 === 0) {
+                    img1 = img; // při prvním kliku nastavím do img1 = pomocná proměnná
+                } else {
+                    img2 = img; // při druhém kliku nastavím do img2 = pomocná proměnná
+                }
+                
+                // kontrola zda img1 a img2 jsou naplněné (nejsou null)
+                if (img1 && img2) {
+                    // kontrola zda jsou shodné
+                    if (img1.src === img2.src) {
+                        img1.onclick = null; // zruším click event
+                        img2.onclick = null; // zruším click event
+                        img1 = null; // reset pomocných proměnných
+                        img2 = null; // reset pomocných proměnných
+                    } else {
+                        // else větev = jsou jiné obrázky
+                        // setTimeout vykoná činnost za 1000ms = 1 sekunda
+                        setTimeout(function() {
+                            img1.src = 'https://picsum.photos/200'; // nastavím zpět na skrytou stranu
+                            img2.src = 'https://picsum.photos/200'; // nastavím zpět na skrytou stranu
+                            img1 = null; // reset pomocných proměnných
+                            img2 = null; // reset pomocných proměnných
+                        }, 1000);
+                    }
+                }
+
+                pocetKliku += 1; // zvětšuji pomocnou proměnnou při každém kliku
+            }
+        }
+
+        // <img src="https://picsum.photos/200" data-xyz="src">
+
+        console.log(obrazky);
+
+    </script>
+
+</body>
+</html>

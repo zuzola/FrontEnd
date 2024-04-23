@@ -1,0 +1,61 @@
+csv - comma separated values (,;|)
+- přes dat, uchování infomací
+
+xml - extenbsible markup language
+- přes dat, komunikace mezi systémy
+<osoba>
+    <jmeno>Jana</jmeno>
+    <prijmeni>Nová</prijmeni>
+</osoba>
+
+
+JSON = JavaScript Object Notation - textový typ
+- přenos dat mezi systémy, přenost dat v HTML JS aplikacích
+{
+    "osoba": {
+        "jmeno": "Jana",
+        "prijmeni": "Nová",
+        "klic": [],
+        "klic2": true,
+        "klic3": 1,
+        "klic4": 1.323,
+        "klic5": {},
+    },
+    "osoba2": {
+        "jmeno": "Jana",
+        "prijmeni": "Nová",
+        "klic": [],
+        "klic2": true,
+        "klic3": 1,
+        "klic4": 1.323,
+        "klic5": {},
+    },
+}
+
+
+
+Obrázkové typy
+jpeg + jpg - rastrový, ztrátová komprese, dobrá koprese, nepodporuje průhlednost, slouží k uložení fotek
+png - rastrový, podporuje průhlednost, bezztrátová komprese, slouží k ikony, webová grafika, loga atd...
+webp - rastrový, podporuje průhlednost, bezztrátová + bezztrátová komprese, lepší komprese než jpeg
+svg (xml based) - vektorový, tvorba iko, grafiky, loga atd ...
+
+
+
+
+txt
+
+
+exe - 
+DLL - 
+
+
+HTML
+
+JS
+
+py
+
+cpp
+
+csharp

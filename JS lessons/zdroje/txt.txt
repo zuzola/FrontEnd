@@ -1,0 +1,122 @@
+Materiály ke studiu:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_AND
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR
+https://cs.wikipedia.org/wiki/Vývojový_diagram
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while
+https://www.jakpsatweb.cz/javascript/pole.html
+https://cs.wikipedia.org/wiki/Podprogram
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+https://www.jakpsatweb.cz/javascript/funkce.html
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName
+https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
+https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll
+
+
+záznam:
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240229_175457-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240305_175404-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+https://itstepedu.sharepoint.com/sites/JS9/Shared Documents/General/Recordings/Schůzka v kanálu „General“-20240312_175907-Záznam schůzky.mp4?web=1
+
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240314_175304-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+Seznam událostí:
+https://www.javatpoint.com/javascript-events
+
+Jak používat addEventListener
+https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
+
+Záznam z hodiny
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240319_175452-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+Zdroje k prostudování
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
+
+Záznam
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240321_175530-Z%C3%A1znam%20sch%C5%AFzky%201.mp4?web=1
+
+Přečtěte si o OOP:
+https://cs.wikipedia.org/wiki/Objektově_orientované_programování
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript
+
+
+Záznam z hodiny:
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240326_180008-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+zdroje pro studium nové žádné nejsou
+- projděte ty z předchozích hodin
+
+Záznam
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240328_175810-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+
+DOM API
+https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API
+https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model
+
+BOM API
+https://developer.mozilla.org/en-US/docs/Web/API
+
+nahrávka
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240404_175731-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+jQuery Tutorial
+https://www.w3schools.com/jquery/default.asp
+
+Wiki
+https://cs.wikipedia.org/wiki/JQuery
+
+jQuery Dokumentace
+https://api.jquery.com/
+
+js defer async loading
+https://www.vzhurudolu.cz/prirucka/js-async-defer-module
+
+Nahrávka
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240409_180047-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+Knihovna Leaflet
+https://leafletjs.com/reference.html
+
+Math a Date objekty
+https://github.com/suche-cz/GROUP04/blob/main/JS/cheatsheet/date-math.md
+
+JSON
+https://cs.wikipedia.org/wiki/JavaScript_Object_Notation
+
+fetch
+https://developer.mozilla.org/en-US/docs/Web/API/fetch
+
+Typy souborů
+- viz soubory typy_souboru(2).txt
+
+Licence
+https://cs.wikipedia.org/wiki/Creative_Commons
+https://cs.wikipedia.org/wiki/Licence_MIT
+https://cs.wikipedia.org/wiki/Licence_Apache
+https://cs.wikipedia.org/wiki/GNU_General_Public_License
+
+nahrávka:
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240411_180031-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+
+
+Základy webu a internetu
+https://github.com/suche-cz/GROUP04/blob/main/JS/zaklady_internetu.md
+
+Jak funguje internet video
+https://www.youtube.com/watch?v=L05HGoaDkRo
+
+Nahrávka
+https://itstepedu.sharepoint.com/sites/JS9/Shared%20Documents/General/Recordings/Sch%C5%AFzka%20v%20kan%C3%A1lu%20%E2%80%9EGeneral%E2%80%9C-20240416_180134-Z%C3%A1znam%20sch%C5%AFzky.mp4?web=1
+
+

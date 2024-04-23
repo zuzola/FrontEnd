@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>My UI page</h1>
+
+    <p>Toto je stranka s nastavenim</p>
+
+    <img src="https://picsum.photos/200/" alt="" width="200" height="200" />
+
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <input type="text" name="color" />
+    <input type="text" name="size" />
+    <input type="text" name="width" />
+    <input type="text" name="height" />
+
+    <script>
+      let text = document.getElementsByTagName("h1")[0];
+      let par = document.getElementsByTagName("p")[0];
+      let image = document.getElementsByTagName("img")[0];
+
+      let colorInput = document.getElementsByName("color")[0];
+      let sizeInput = document.getElementsByName("size")[0];
+      let widthInput = document.getElementsByName("width")[0];
+      let heightInput = document.getElementsByName("height")[0];
+
+      heightInput.onchange = function () {
+        image.height = heightInput.value;
+      };
+
+      widthInput.onchange = function () {
+        image.width = widthInput.value;
+      };
+
+      sizeInput.onchange = function () {
+        par.style.fontSize = sizeInput.value;
+      };
+
+      colorInput.onchange = function () {
+        if (
+          colorInput.value === "red" || 
+          colorInput.value === "blue" ||
+          colorInput.value === "green"
+        ) {
+          text.style.color = colorInput.value;
+          par.style.color = colorInput.value;
+        } else if (colorInput.value.startsWith("#")) {
+          text.style.color = colorInput.value;
+          par.style.color = colorInput.value;
+        } else {
+          text.style.color = "black";
+          par.style.color = "black";
+        }
+        // hex 0-F
+        // 0123456789ABCDEF
+        // #FF0000 alebo #006699
+        // if () {}
+        // else if () {}
+      };
+    </script>
+  </body>
+</html>

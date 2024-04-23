@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vysledek = 0;
+
+        for (let cislo=1; cislo<=50; cislo++) {
+            console.log(cislo);
+            vysledek += cislo;
+        }
+
+        console.log(vysledek);
+
+        function suma(odCislo, doCislo) {
+            let vysledek = 0;
+
+            for (let cislo=odCislo; cislo<=doCislo; cislo++) {
+                // console.log(cislo);
+                vysledek += cislo;
+            }
+
+            console.log(vysledek);
+            return vysledek;
+
+        }
+
+        let data = ['Jana', 'Petr', 'Leos', 'Tomas'];
+        //             0       1       2       3
+        // data.length == 4
+
+        for (let poradi=0; poradi<data.length; poradi++) {
+            let jmeno = data[poradi];
+            console.log(poradi, jmeno);
+        }
+
+        for (let jmeno of data) {
+            console.log(jmeno);
+        }
+        data.forEach(function(jmeno, index) {
+            console.log(jmeno, index);
+        });
+
+    </script>
+</body>
+</html>

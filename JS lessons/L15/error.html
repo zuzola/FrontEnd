@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // funkce pro vypocet body mass indexu
+        function bmi(vyska, vaha) {
+            // if (vyska === 0) {}
+            if (vyska <= 0) throw 'vyska musi byt kladna';
+            
+
+        }
+
+        function bmi2(vyska, vaha) {
+            if (vyska && vaha) {
+                let vysledek = vaha / (vyska * vyska);
+                return vysledek;
+            }
+
+            throw 'vyska a vaha musi byt kladna cisla';
+        }
+
+        let bmiJana = (1.8, 70);
+        let bmiPetr = (1.77, 80);
+
+        try {
+            // spusti kod v tomto bloku
+            let bmiKuba = bmi(0, 60);
+            yjistiHodnotu();
+        } catch {
+            // pokud nastane chyba, spusti se tato cast kodu
+            alert("zadal jsi spatne hodnoty");
+        } finally {
+            // volitelne
+            // tato cast kodu sa spusti vzdy na konci tohoto zkouseni
+        }
+
+    </script>
+</body>
+</html>

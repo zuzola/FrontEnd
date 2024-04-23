@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pole2</title>
+    <style>
+        div * {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            max-width: 150px;
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <input id="input" type="text" placeholder="Add new item">
+    <button id="button">Add</button>
+    <br>
+    <br>
+
+    <script>
+        let input = document.getElementById('input');
+        let newButton = document.getElementById('button');
+
+        function  addFromElement(){
+            if (input.value ==='') { return; }
+            addNewItem(input.value);
+            input.value = '';
+        }
+
+
+        newButton.onclick = addFromElement;
+        input.onchange = addFromElement;
+
+        let data = ['HTML', 'CSS', 'JS', 'Python', 'Java', 'New Tech'];
+
+        function addNewItem(taskName) {
+            let element = document.createElement('div');
+            let p = document.createElement('p');
+            let button = document.createElement('button');
+            document.body.appendChild(element);
+            element.appendChild(p);
+            element.appendChild(button);
+
+            p.textContent = taskName;
+            button.textContent = 'Remove';
+
+            button.onclick = function () {
+                element.remove();
+            }
+        }
+
+         for (let index=0; index<data.length; index++) {
+            addNewItem(data[index]);
+            // * console.log(index, data[index]);
+         }
+
+         /* 
+         index = 0 -> data[0]
+         index = 1 -> data[1]
+         index = 2 -> data[2]
+         index = 3 -> data[3]
+         */
+
+    </script>
+</body>
+</html>

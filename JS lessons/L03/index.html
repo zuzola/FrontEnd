@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pole.html</title>
+</head>
+<body>
+
+    <script>
+        let seznamUkolu = ["Jmeno", "Praha", "Ahoj"];
+        /*
+        Pole = Array
+        - serazena sekvence prvku
+        - pole ma delku (pocet prvku)
+        - muzeme radit
+        - index = poradi jednoho konkretniho prvku (zaciname od 0)
+        - pozice
+        - modifikace
+        */
+
+        // console.log(seznamUkolu);
+        // console.log(seznamUkolu[0], seznamUkolu[0].length);
+        // console.log(seznamUkolu[1]);
+        // console.log(seznamUkolu[2]);
+
+        let hodnota = prompt('Zadej jmeno: ');
+
+        seznamUkolu.push(hodnota);
+
+        console.log(seznamUkolu);
+
+
+        for (let index=0; index < seznamUkolu.length; index++) {
+            let ukol = seznamUkolu[index];
+            console.log(ukol);
+        }
+
+    </script>
+</body>
+</html>

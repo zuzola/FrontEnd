@@ -1,0 +1,35 @@
+<!-- jquery1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello jQuery</h1>
+
+    <h2 class="syntax">Syntax</h2>
+    <h2>Variables</h2>
+
+    <p id="myPar">XYZ</p>
+    <p>ABC</p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        let a = $('#myPar'); // vrátí prvky
+        let b = a.css('color', '#096'); // vrátí prvky
+        let c = b.css('font-size', '20px'); // vrátí prvky
+
+        $('#myPar').css('color', '#096').css('font-size', '20px');
+
+        // Srovnání js plain JS (vanilla JS)
+        let myPar = document.querySelectorAll('#myPar');
+        for (let item of myPar) {
+            item.style.color = '#ccc';
+            item.style.fontSize = '20px';
+        }
+
+    </script>
+</body>
+</html>

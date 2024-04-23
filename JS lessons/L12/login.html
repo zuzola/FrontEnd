@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .invalid-input {
+            border: 3px solid red;
+        }
+    </style>
+</head>
+<body>
+    <img src="" alt="">
+
+    <form action="" method="POST">
+        <!-- method: GET or POST -->
+        <input required name="username" type="text" placeholder="Uživatelské jméno">
+        <input required name="password" type="password" placeholder="Heslo">
+        <button type="submit">Přihlásit se</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $('form > input').on('change', function(event) {
+            // this je v tomto případě ten daný html prvek
+            // když jej vložíme do $() tak z něho opět uděláme jQuery prvek
+            let value = $(this).val();
+            if (value.length < 3) {
+                $(this).addClass('invalid-input');
+            } else {
+                $(this).removeClass('invalid-input');
+            }
+        });
+
+        // kontrola pro username aby měla pouze alfanumerické znaky
+        $('form > input[name="username"]').on('change', function(event) {
+            let value = $(this).val();
+            let regex = /^[a-zA-Z0-9]{3,}$/;
+            if (regex.test(value)) {
+                $(this).removeClass('invalid-input');
+            } else {
+                $(this).addClass('invalid-input');
+            }
+        });
+    </script>
+</body>
+</html>

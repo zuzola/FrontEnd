@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function getNameLength(name) {
+            // tady je definice funkce
+            let length = name.length;
+            return length;
+        }
+
+        let delka1 = getNameLength('Zuzana', 'Novak');
+        console.log(delka1);
+
+        // a*a + b*b = c*c
+        // a^2 + b^2 = c^2
+        // a**2 + b**2 = c**2
+        // (a**2 + b**2) ** 0.5 = c
+
+        function delkaPrepony(a, b) {
+            let vysledek = (a*a + b*b) ** 0.5;
+            return vysledek;
+        }
+
+        let c = delkaPrepony(5, 10);
+        console.log(c);
+
+    </script>
+</body>
+</html>

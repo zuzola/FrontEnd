@@ -1,0 +1,23 @@
+MIT License:
+Je často používaná v mnoha projektech. Umožňuje vám zdarma používat, kopírovat, měnit, spojovat, publikovat, distribuovat, podávat žaloby a/nebo prodat kopie software bez omezení.
+
+BSD Licenses:
+BSD licence jsou skupinou svobodných softwarových licencí charakterizovaných minimálními omezeními. Mohou se lišit v podrobnostech, ale obecně umožňují široké použití s minimálními omezeními.
+
+Apache License:
+Tato licence je široce používána pro open source software. Umožňuje komukoli užívat software pro jakýkoliv účel, distribuovat, měnit a sublicencovat, avšak s dodržením určitých podmínek, jako například uvedení autorských práv a označení změn.
+
+Eclipse Public License (EPL):
+Licenční model, který poskytuje uživatelům práva používat, změnit a distribuovat software, avšak vyžaduje, aby všechny změny byly zpětně kompatibilní s původní licencí.
+
+GNU Lesser General Public License (LGPL):
+Tato licence umožňuje používat knihovny open source software v proprietárních aplikacích, ale vyžaduje, aby byly zachovány určité podmínky, zejména ohledně možnosti uživatelů přistupovat k zdrojovým kódům knihovny.
+
+Mozilla Public License (MPL):
+Tato licence je kombinací copyleftové a permissivní licence. Umožňuje široké použití a modifikace, ale vyžaduje, aby všechny změny byly publikovány pod stejnou licencí.
+
+Common Development and Distribution License (CDDL):
+Licence vytvořená společností Sun Microsystems (nyní součástí Oracle). Podobná MPL, ale více zaměřená na komerční použití.
+
+Artistic License:
+Tato licence byla původně navržena pro Perl, ale byla použita v různých projektech. Umožňuje svobodné používání, distribuci a modifikaci s podmínkou uvedení autorských práv a označení změn.

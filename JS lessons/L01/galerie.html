@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie</title>
+    <style>
+        body {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        div {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://picsum.photos/ --> 
+    <h1>Galerie</h1>
+    <img src="https://picsum.photos/800/500" alt="" id="main">
+    <div>
+        <img src="https://picsum.photos/800/500?1" alt="" onclick="main.src = this.src;">
+        <img src="https://picsum.photos/800/500?2" alt="" onclick="main.src = this.src;">
+        <img src="https://picsum.photos/800/500?3" alt="" onclick="main.src = this.src;">
+        <img src="https://picsum.photos/800/500?4" alt="" onclick="main.src = this.src;">
+    </div>
+    
+</body>
+</html>

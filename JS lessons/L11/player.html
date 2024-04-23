@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="player" src=""></audio>
+    <ul id="list"></ul>
+
+    <script>
+        let seznamSkladeb = [
+            'https://download.samplelib.com/mp3/sample-6s.mp3',
+            'https://download.samplelib.com/mp3/sample-9s.mp3',
+            'https://download.samplelib.com/mp3/sample-12s.mp3',
+        ];
+
+        /*
+        seznamSkladeb.forEach(function(name, index) {
+            console.log(name);
+        })
+        */
+
+        for (let name of seznamSkladeb) {
+            let item = document.createElement('li');
+            item.textContent = name;
+            list.appendChild(item);
+
+            item.addEventListener('click', function(event) {
+                player.src = name;
+                if (isPlayed) {
+                    player.pause();
+                } else {
+                    player.play();
+                }
+                isPlayed = !isPlayed;
+            });
+        };
+
+    </script>
+
+    
+</body>
+</html>

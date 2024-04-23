@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let penize = 10000;
+
+        while (penize < 100*1000*1000) {
+            let vydelek = parseInt(Math.random() * 1000000)
+            console.log("Vydelal jsem", vydelek, "Kč");
+            penize += vydelek;
+
+            if (penize > 100*1000*1000) {break;}
+        }
+
+        console.log("Celkem jsem vydelel", penize);
+
+        // prochazeni pole pomoci while
+        let jmena = ['Jana', 'Kuba', 'Petr'];
+        let index = 0;
+
+        while (index < jmena.length) {
+            let jmeno = jmena[index];
+            console.log(jmeno);
+            index += 1;
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"/>
+</head>
+<body>
+    <main class="container">
+        <form action="" method="">
+            <input type="text" name="title" required maxlength="100">
+            <textarea name="body" required></textarea>
+    
+            <select name="userId" required>
+                <option value="1">User 1</option>
+                <option value="2">User 2</option>
+                <option value="3">User 3</option>
+            </select>
+
+            <button>Submit</button>
+            <!--<input type="submit" value="Odeslat">-->
+        </form>
+    </main>
+
+    <script>
+        
+        let form = document.querySelector('form');
+
+        form.addEventListener('submit', event => {
+            event.preventDefault();
+
+            let title = form.querySelector('[name="title"]');
+            let body = form.querySelector('[name="body"]');
+            let userId = form.querySelector('[name="userId"]');
+
+            createPost(title, body, userId);
+        });
+
+        let url = 'https://jsonplaceholder.typicode.com/posts';
+
+    function createPost(title, body, userId) {
+        fetch(url, {
+            method: 'POST',
+            body: JSON.stringify({
+                title: title,
+                body: body,
+                userId: userId
+            }),
+            headers: {
+                'Content-Type': 'application/json; chartset=UTF-8'
+            }
+        })
+            .then(response => {
+                return response.json();
+            })
+            .then(data => {
+                alert("Post created" + JSON.stringify(data));
+            });
+    }
+
+    </script>
+</body>
+</html>

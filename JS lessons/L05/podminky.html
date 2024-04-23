@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podminky</title>
+  </head>
+  <body>
+    <script>
+      let vek = parseInt(prompt("Zadej vek:"));
+      let vyska = parseInt(prompt("Zadej vysku:"));
+
+      if (vek >= 18 && vyska >= 170) {
+        if (vek < 18) {
+          alert("Pockej do 18-ti let");
+        }
+
+        if (vyska < 170) {
+          alert("Si prilis nizky");
+        }
+
+        alert("Jsi prijat");
+      } else {
+        alert("Bohuzel");
+      }
+    </script>
+  </body>
+</html>

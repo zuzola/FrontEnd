@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pexeso2</title>
+    <style>
+        div {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+            width: 1250px;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>   
+
+    <script>
+        /*
+        1. generovani URL obrazku
+        2. zamicham obrazky
+        3. vykresleni obrazku
+        4. click event na obrazky
+        */
+
+        const BASE_IMAGE = 'https://picsum.photos/200';
+
+        function getImageUrls(count) {
+            let obrazky = [];  // vraci nam funkci nahodnych url
+
+            for (let index=1; index<=count; index++) {
+            let url = BASE_IMAGE + '?' + index;
+            obrazky.push(url);
+            obrazky.push(url);
+        }
+
+            obrazky.sort(() => Math.random() - 0.5);
+
+            return obrazky;
+        }
+
+        function renderImages(imageUrls) {
+            for (let index=0; index<imageUrls.length; index++) {
+                let url = imageUrls[index];
+                let image = createImage(url);
+                main.appendChild(image);
+            }
+        } 
+
+        // let img = createImage('https://picsum.photos/200');
+        // main.appendChild(img);
+
+        let turnedImage1 = null;
+        let turnedImage2 = null;
+        let turnCounter = 0;
+
+        function createImage(imageUrl) {
+            let image = document.createElement('img');
+            image.src = BASE_IMAGE;
+            image.onclick = function() {
+                if (image.src === BASE_IMAGE) {
+                    image.src = imageUrl;
+                } else {
+                    // image.src = BASE_IMAGE;
+                }
+
+                if (turnCounter % 2 === 0) {
+                    turnedImage1 = image;
+                } else {
+                    turnedImage2 = image;
+                }
+
+                checkImages();
+                turnCounter += 1;
+            };
+            return image;
+        }
+
+        function checkImages() {
+            if (turnedImage1 && turnedImage2) {
+                    if (turnedImage1.src === turnedImage2.src) {
+                        turnedImage1.onclick = null;
+                        turnedImage2.onclick = null;
+                        turnedImage1 = null;
+                        turnedImage2 = null;
+                    } else {
+                        setTimeout(function() {
+                            turnedImage1.src = BASE_IMAGE;
+                            turnedImage2.src = BASE_IMAGE;
+                            turnedImage1 = null;
+                            turnedImage2 = null;
+                        },1000);
+                    }
+                                
+                }
+        }
+
+        let urls = getImageUrls(2);
+        renderImages(urls);
+
+    </script>
+
+</body>
+</html>
