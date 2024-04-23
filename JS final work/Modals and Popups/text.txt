@@ -1,0 +1,21 @@
+1. Co to je, k čemu to je:
+
+Modální (dialogové) okno je okno, které po zobrazení blokuje vstup do dalších částí programu, 
+až do zavření tohoto okna. Tato okna jsou používány v programech, 
+kdy je potřeba nějaká informace, kterou musí uživatel potvrdit, aby mohl pokračovat.
+Díky dialogovým oknům může skript upozorňovat, dát na výběr a předávat hodnoty od návštěvníka. 
+Dialogová okna, jak už název napovídá slouží ke komunikaci mezi uživatelem a skriptem.
+
+2. Vlastnosti:
+
+Open source
+The MIT License (MIT)
+Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com
+https://github.com/dimsemenov/Magnific-Popup
+
+3. Základní komponenty knihovny
+
+Knihovna se skládá z části JS a CSS. K vykreslení potřebuje div s id, pomocí. 
+// Tento div se použije ve funkci L.map
+L.Map je základní objekt pro tvorbu mapy. //
+Další objekty a funkce jsou dostupné na https://awesome-javascript.js.org/resources/modals-and-popups.html

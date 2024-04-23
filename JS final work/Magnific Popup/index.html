@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaverecny projekt</title>
+    <link rel="stylesheet" href="magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>GAME CENTRE</h1>
+      <a class="popup" href="uni-corn.jpg">
+        <button class="button-1">UNICORN</button>
+      </a>
+
+      <h2>MY GALLERY</h2>
+
+      <div class="gallery">
+        <a href="uni-corn.jpg"><img src="uni-corn.jpg" /></a>
+        <a href="https://doge2048.com/" class="mfp-iframe"
+          ><img src="doge.jpg"
+        /></a>
+        <a href="https://www.nyan.cat/" class="mfp-iframe"
+          ><img src="nyan-cat-rainbow.gif"
+        /></a>
+      </div>
+      <div id="text-popups">
+        <a href="test-popup" data-effect="mfp-zoom-in">Open</a>
+        <div id="test-popup" class="white-popup mfp-with-anim mfp-hide">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+          consequatur, voluptatum repellat, doloremque quo dolor tempora culpa
+          nobis, quas non quos ab perferendis. Tempora debitis ullam totam
+          ducimus repudiandae ratione placeat id sapiente omnis neque pariatur
+          nihil dignissimos, reiciendis minima, delectus necessitatibus culpa
+          nostrum dolores excepturi animi! Atque, facilis ut!
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".popup").magnificPopup({
+        type: "image",
+      });
+
+      $(".gallery").each(function () {
+        // the containers for all your galleries
+        $(this).magnificPopup({
+          delegate: "a", // the selector for gallery item
+          type: "image",
+          gallery: {
+            enabled: true,
+          },
+        });
+      });
+
+      $("white-popup").magnificPopup({
+        delegate: "white-popup",
+        removalDelay: 500, //delay removal by X to allow out-animation
+        callbacks: {
+          beforeOpen: function () {
+            this.st.mainClass = this.st.el.attr("white-popup");
+          },
+        },
+        midClick: true, // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
+      });
+    </script>
+  </body>
+</html>

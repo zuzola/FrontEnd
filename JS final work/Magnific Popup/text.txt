@@ -1,0 +1,17 @@
+1. Co to je, k čemu to je:
+
+JS knihovna, která umožňuje vytvářet modální a vyskakovací okna s obrázky, texty, videi, formuláři atd. 
+Do každé položky galerie můžete vložit libovolný obsah HTML a kombinovat typy obsahu.
+
+2. Vlastnosti:
+
+Open source
+The MIT License (MIT)
+Copyright (c) 2014-2016 Dmitry Semenov, http://dimsemenov.com
+https://dimsemenov.com/plugins/magnific-popup/
+https://dimsemenov.com/plugins/magnific-popup/documentation.html
+
+3. Základní komponenty knihovny
+
+Knihovna se skladá z části JS a CSS. K vykresleniu potrebuje div s id pomocí. 
+Dalšie objekty a funkce sú dostupné na https://awesome-javascript.js.org/resources/modals-and-popups.html
