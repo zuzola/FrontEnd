@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadani_08_cube</title>
+  </head>
+  <body>
+    <script>
+      function createCube(size) {
+        let cube = document.createElement("div");
+        cube.style.height = size + "px";
+        cube.style.width = size + "px";
+        document.body.appendChild(cube);
+        return cube;
+      }
+      function colorCube(cube, color) {
+        cube.style.backgroundColor = color;
+      }
+      function addBorderRadius(cube, radius) {
+        cube.style.borderRadius = radius + "px";
+      }
+
+      let myCube = createCube(100);
+      colorCube(myCube, "red");
+      addBorderRadius(myCube, 10);
+    </script>
+  </body>
+</html>

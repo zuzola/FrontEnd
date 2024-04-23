@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadani_01</title>
+  </head>
+  <body>
+    <h1>Výsledek</h1>
+
+    <p>Zadejte programovací jazyk:</p>
+    <input type="text" id="language" />
+
+    <p>Zadejte město:</p>
+    <input type="text" id="city" />
+
+    <br />
+    <br />
+
+    <button id="tlacitko">Přihlásit se</button>
+
+    <script>
+      let text = document.getElementsByTagName("h1")[0];
+
+      let city = document.getElementById("city");
+
+      let language = document.getElementById("language");
+
+      document.getElementById("tlacitko").onclick = function () {
+        if (
+          (language.value.toLowerCase() === "python" &&
+            city.value.toLowerCase() === "praha") ||
+          (language.value.toLowerCase() === "javascript" &&
+            city.value.toLowerCase() === "praha")
+        ) {
+          text.innerHTML = "Jste přijat";
+          text.style.color = "green";
+        } else {
+          text.innerHTML = "Bohužel";
+          text.style.color = "orange";
+        }
+      };
+    </script>
+  </body>
+</html>

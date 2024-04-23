@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadani_10_galerie</title>
+
+    <style>
+      .img {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      class Galerie {
+        constructor(obrazky) {
+          this.obrazky = obrazky;
+          this.index = 0;
+          this.image = document.createElement("img");
+          document.body.appendChild(this.image);
+          this.image.src = this.obrazky[this.index];
+        }
+        next() {
+          if (this.index === this.obrazky.length - 1) {
+            this.index = 0;
+          } else {
+            this.index += 1;
+          }
+          this.image.src = this.obrazky[this.index];
+        }
+        prev() {
+          if (this.index === 0) {
+            this.index = this.obrazky.length - 1;
+          } else {
+            this.index -= 1;
+          }
+          this.image.src = this.obrazky[this.index];
+        }
+      }
+
+      let obrazky = [
+        "https://picsum.photos/id/10/600/300",
+        "https://picsum.photos/id/20/600/300",
+        "https://picsum.photos/id/30/600/300",
+      ];
+
+      let galerie = new Galerie(obrazky);
+      galerie.next();
+      galerie.prev();
+    </script>
+  </body>
+</html>

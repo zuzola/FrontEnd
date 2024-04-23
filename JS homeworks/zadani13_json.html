@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zadani_13_json</title>
+  </head>
+  <body>
+    <script>
+      let dataUrl = "https://jsonplaceholder.typicode.com/users";
+
+      fetch(dataUrl)
+        .then(function (response) {
+          return response.json();
+        })
+        .then(function (data) {
+          for (let item of data) {
+            let userDiv = document.createElement("div");
+            let userName = document.createElement("h2");
+            let userEmail = document.createElement("p");
+            let userCompany = document.createElement("p");
+
+            userName.textContent = item.name;
+            userEmail.textContent = item.email;
+            userCompany.textContent = item.company.name;
+
+            document.body.appendChild(userDiv);
+            userDiv.appendChild(userName);
+            userDiv.appendChild(userEmail);
+            userDiv.appendChild(userCompany);
+          }
+        });
+    </script>
+  </body>
+</html>
